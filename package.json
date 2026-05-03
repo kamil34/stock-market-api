@@ -1,0 +1,29 @@
+{
+  "name": "stock-market-api",
+  "version": "1.0.0",
+  "description": "Lightweight stock market API built with Node.js for fetching, tracking, and simulating market data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.13.14",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamil34/stock-market-api.git"
+  },
+  "author": "kamil34",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kamil34/stock-market-api/issues"
+  },
+  "homepage": "https://github.com/kamil34/stock-market-api#readme"
+}

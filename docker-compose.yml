@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    environment:
+      PORT: ${PORT:-8080}
+      DB_PATH: /data/market.db
+      WORKERS: ${WORKERS:-2}
+    ports:
+      - "${PORT:-8080}:${PORT:-8080}"
+    volumes:
+      - stock_data:/data
+    restart: unless-stopped
+
+volumes:
+  stock_data:
